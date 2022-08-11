@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AlarmTableViewCell" customModule="clockTry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMx-cW-Ppe">
+                        <rect key="frame" x="20" y="10" width="60" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="y9I-p5-9yY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x42-AB-BAh">
+                        <rect key="frame" x="230" y="10" width="70" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="1ox-Iu-KoJ"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x42-AB-BAh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8i9-lX-aa0"/>
+                    <constraint firstItem="vMx-cW-Ppe" firstAttribute="centerY" secondItem="x42-AB-BAh" secondAttribute="centerY" id="ZfF-jc-mxp"/>
+                    <constraint firstAttribute="trailing" secondItem="x42-AB-BAh" secondAttribute="trailing" constant="20" id="dPp-zl-Ts9"/>
+                    <constraint firstAttribute="bottom" secondItem="x42-AB-BAh" secondAttribute="bottom" constant="10" id="hLq-VZ-g5J"/>
+                    <constraint firstItem="vMx-cW-Ppe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kv6-gY-rw7"/>
+                    <constraint firstItem="vMx-cW-Ppe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="w3l-Ap-vyJ"/>
+                    <constraint firstAttribute="bottom" secondItem="vMx-cW-Ppe" secondAttribute="bottom" constant="10" id="xmR-Gt-k2z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="clockButton" destination="x42-AB-BAh" id="5ty-pL-X8P"/>
+                <outlet property="clockLabel" destination="vMx-cW-Ppe" id="qsc-bK-PIO"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="88"/>
+        </tableViewCell>
+    </objects>
+</document>
